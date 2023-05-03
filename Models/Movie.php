@@ -14,20 +14,22 @@
         public $director;
         public $cover;
         public $duration;
+        public $genre = [];
 
         
 // construct
 //   => all'interno della classe è definito un costruttore
 
-        function __construct (string $title, int $releaseYear, string $director, string $cover, string $duration){
+        function __construct (string $title, int $releaseYear, string $director, string $cover, string $duration, array $genre){
         
             $this->title = $title;
             $this->releaseYear = $releaseYear;
             $this->director = $director;
             $this->cover = $cover;
             $this->duration = $duration;
-        
+            $this->genre = $genre;
         }
+
 
     }
 
